@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    color: #3d3d3d;
+    padding-bottom: 60px;
+}
+
+/* Start Header */
+header{
+    padding: 20px 35px 20px 0;
+    background-color: #3d3d3d;
+}
+
+header h1{
+    font-weight: bold;
+    font-size: 36px;
+    background-color: #f85c1f;
+    margin: 0;
+    padding: 3px 10px 3px 50px;
+    display: inline;
+}
+
+header a{
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav a{
+    color:  #f85c1f;
+}
+
+header nav ul li {
+    display: inline;
+    
+}
+
+header nav ul li a {
+    margin: 0 15px;
+    font-weight: lighter;
+    font-size: 22px;
+    text-decoration: underline;
+}
+/* End Header */
+
+
+/* Start Hero */
+section{
+    padding-top: 60px;
+}
+
+.hero{
+    background-image: url("../images/pexels-photo-414579.jpeg");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.prof-pic {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 0;
+    border: solid 5px #f85c1f;
+}
+
+.prof-pic img{
+    width: auto;
+    height: 150%;
+    margin-left: -20px; 
+    margin-top: -15px;
+}
+
+.intro {
+    width: fit-content;
+    background-color: #f85c1f;
+    color: #3d3d3d;
+    font-size: 24px;
+    padding: 3px;
+    position: absolute;
+    bottom: 185px;
+    left: 400px;
+}
+/* End Hero */
+
+/* Set content positioning */
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-titles {
+    width: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: right;
+    color: #3d3d3d;
+    border-right: #f85c1f solid;
+    padding-right: 10px;
+}
+.section-content {
+    padding-left: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* Work section buttons */
+/* flex parent */
+.section-content {
+    /* create flexbox */
+    display: flex;
+    /* instruct it to break onto next line if it runs out of space */
+    flex-wrap: wrap;
+    /* put all unused space between items */
+    justify-content: space-between;
+    width: 100%;
+}
+
+.big-button {
+    width: 100%;
+    border-radius: 14px;
+    border: 4px solid #f85c1f;
+    background-color: #393b4f;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+
+    /* padding top and bottom 20px, 0 for left/right */
+    padding: 20px 0;
+
+    /* set minimum heigh value so there's room */
+    min-height: 300px;
+
+    /* rather than use position...use flexbox and create column instead of row */
+    display: flex;
+    flex-direction: column;
+}
+/* flex child */
+.small-button {
+    /* make each one 45%, putting 10% between each element on the page */
+    width: 48%;
+    /* rounded corners */
+    border-radius: 14px;
+    border: 4px solid #f85c1f;
+    background-color: #393b4f;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+    /* for files in local images folder, use url('../images/file-name.jpg') */
+    background-image: url('../images/IMG_8356.jpeg');
+
+    /* tell background to fit box no matter what */
+    background-size: cover;
+
+    /* crop it at the center */
+    background-position: center;
+
+    /* padding top and bottom 20px, 0 for left/right */
+    padding: 20px 0;
+
+    /* set minimum heigh value so there's room */
+    min-height: 150px;
+
+    /* rather than use position...use flexbox and create column instead of row */
+    display: flex;
+    flex-direction: column;
+}
+
+#work .section-content :hover{
+    opacity: .5;
+}
+/* for text area inside of flex item */
+.section-content span {
+    /* pushes element to bottom of flex item */
+    margin-top: auto;
+    width: max-content;
+    background-color: #f85c1f;
+    color: #3d3d3d;
+    padding: 10px 5px;
+    text-align: left;
+}
+.surf {
+
+    /* for files in local images folder, use url('../images/file-name.jpg') */
+    background-image: url('../images/Ap_Creative_Stock_Header.jpeg');
+    /* tell background to fit box no matter what */
+    background-size: cover;
+    /* crop it at the center */
+    background-position: center;
+}
+.led {
+
+    /* for files in local images folder, use url('../images/file-name.jpg') */
+    background-image: url('../images/download.jpeg');
+    /* tell background to fit box no matter what */
+    background-size: cover;
+    /* crop it at the center */
+    background-position: center;
+}
+.calc {
+
+    /* for files in local images folder, use url('../images/file-name.jpg') */
+    background-image: url('../images/30-photos-absurdes-banques-dimages-23.jpeg');
+    /* tell background to fit box no matter what */
+    background-size: cover;
+    /* crop it at the center */
+    background-position: center;
+}
+.pastel {
+
+    /* for files in local images folder, use url('../images/file-name.jpg') */
+    background-image: url('../images/business_cover.jpeg');
+    /* tell background to fit box no matter what */
+    background-size: cover;
+    /* crop it at the center */
+    background-position: center;
+}
+.run {
+
+    /* for files in local images folder, use url('../images/file-name.jpg') */
+    background-image: url('../images/BizarreStockPhotos__HERO_shutterstock_1308961057.jpeg');
+    /* tell background to fit box no matter what */
+    background-size: cover;
+    /* crop it at the center */
+    background-position: center;
+}
+
+
+/* Set resume section style */
+#resume .section-content{
+    display: flex;
+    flex-direction: column;
+}
+#resume a {
+    text-decoration: none;
+    background-color: #f85c1f;
+    color: #3d3d3d;
+    text-align: center;
+    font-size: 22px;
+    width: 300px;
+    margin: 5px 50px;
+    padding: 10px;
+    border-color: #3d3d3d;
+    border-style: solid;
+    border-width: thick;
+}
+
+#contact-me ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#contact-me ul li a {
+    margin: 0 15px;
+    font-weight: lighter;
+    font-size: 22px;
+    text-decoration: underline;
+    color: #f85c1f;
+}

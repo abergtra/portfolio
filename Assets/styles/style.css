@@ -137,7 +137,7 @@ section{
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 15px;
-
+    text-decoration: none;
 
     /* padding top and bottom 20px, 0 for left/right */
     padding: 20px 0;
@@ -197,7 +197,7 @@ section{
 .surf {
 
     /* for files in local images folder, use url('../images/file-name.jpg') */
-    background-image: url('../images/Ap_Creative_Stock_Header.jpeg');
+    background-image: url('../images/group-project-logo.png');
     /* tell background to fit box no matter what */
     background-size: cover;
     /* crop it at the center */

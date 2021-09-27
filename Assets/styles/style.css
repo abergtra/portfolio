@@ -215,7 +215,7 @@ section{
 .calc {
 
     /* for files in local images folder, use url('../images/file-name.jpg') */
-    background-image: url('../images/30-photos-absurdes-banques-dimages-23.jpeg');
+    background-image: url('../images/logo.png');
     /* tell background to fit box no matter what */
     background-size: cover;
     /* crop it at the center */

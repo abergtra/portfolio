@@ -206,7 +206,7 @@ section{
 .led {
 
     /* for files in local images folder, use url('../images/file-name.jpg') */
-    background-image: url('../images/NoneLeft-logo.png');
+    background-image: url('../images/logo.PNG');
     /* tell background to fit box no matter what */
     background-size: cover;
     /* crop it at the center */
@@ -215,7 +215,7 @@ section{
 .calc {
 
     /* for files in local images folder, use url('../images/file-name.jpg') */
-    background-image: url('../images/logo.png');
+    background-image: url('../images/NoneLeft-logo.png');
     /* tell background to fit box no matter what */
     background-size: cover;
     /* crop it at the center */
